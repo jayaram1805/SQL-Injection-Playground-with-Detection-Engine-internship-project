@@ -1,0 +1,43 @@
+#  SQL Injection Playground
+
+## Introduction
+This project demonstrates how **SQL Injection (SQLi)** attacks work in a vulnerable web application and how to prevent them using **parameterized queries**.  
+It was developed as part of DBMS & Cybersecurity learning.
+
+---
+
+##  Abstract
+SQL Injection is a common web security vulnerability that allows attackers to interfere with database queries.  
+This project shows:
+- A **vulnerable login form** where SQL Injection works.  
+- A **secure login form** where parameterized queries block attacks.  
+The goal is to provide a hands-on understanding of SQLi attacks and prevention.
+
+---
+
+##  Tools Used
+- **Python 3**  
+- **Flask (Web Framework)**  
+- **SQLite3 (Database)**  
+- **Windows OS**  
+- **Virtual Environment (venv)**  
+
+---
+
+##  Steps Involved in Building the Project
+1. Installed Python, Flask, and created a virtual environment.  
+2. Set up an SQLite database with sample users (`admin/admin123`, `test/test123`).  
+3. Built a **vulnerable login page** where inputs are directly inserted into SQL queries.  
+4. Built a **secure login page** using **parameterized queries**.  
+5. Tested SQL Injection attempts:
+   - Vulnerable page → bypassed login with `admin' --`.  
+   - Secure page → attack failed, only real credentials worked.  
+
+---
+
+## Conclusion
+- Learned how SQL Injection attacks work and why they are dangerous.  
+- Understood the importance of **secure coding practices**.  
+- Successfully demonstrated both **attack** and **defense** in a simple Flask app.  
+
+
